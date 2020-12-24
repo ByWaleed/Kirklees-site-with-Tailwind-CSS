@@ -474,13 +474,12 @@
         </div>
     </header>
 
-    <section class="mx-auto width-full flex flex-col items-center py-12 sm:py-24 overflow-hidden bg-cover bg-center"
-        style="background-image: url('https://www.kirklees.gov.uk/beta/assets/global/img/background_trainstation.jpg" )')>
-        <h1
-            class="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold leading-tight">
-            Popular Services</h1>
+    <section class="mx-auto width-full flex flex-col items-center pt-12 pb-6 md:pt-24 overflow-hidden bg-cover bg-center" style="background-image: url('https://www.kirklees.gov.uk/beta/assets/global/img/background_trainstation.jpg" )')>
+        <h1 class="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold leading-tight">
+            Popular Services
+        </h1>
     
-        <div class="container mt-10 max-w-6xl p-5"
+        <div class="container mt-10 max-w-7xl p-5"
             x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'residents' }" id="tab_wrapper">
             <nav class="flex flex-col md:flex-row bg-white text-lg">
                 <a href="#" class="md:flex-1 py-4 pl-5 hover:bg-gray-200 border-b-8"
@@ -501,7 +500,7 @@
             </nav>
     
             <div class="bg-white">
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 text-left sm:p-5 md:px-6 md:py-10 lg:px-7 lg:py-12"
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 text-left p-5 md:px-6 md:py-10 lg:px-7 lg:py-12"
                     x-show="tab === 'residents'">
                     <div class="flex items-center">
                         <img src="https://www.kirklees.gov.uk/beta/assets/global/img/icons/roundicons/128/Construction-02.png"
@@ -544,7 +543,7 @@
                         <a href="#" class="pl-3">Household waste recycling centers</a>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 text-left sm:p-5 md:px-6 md:py-10 lg:px-7 lg:py-12"
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 text-left p-5 md:px-6 md:py-10 lg:px-7 lg:py-12"
                     x-show="tab === 'businesses'">
                     <div class="flex items-center">
                         <img src="https://www.kirklees.gov.uk/beta/assets/global/img/icons/roundicons/128/Construction-02.png"
@@ -587,7 +586,7 @@
                         <a href="#" class="pl-3">Household waste recycling centers</a>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 text-left sm:p-5 md:px-6 md:py-10 lg:px-7 lg:py-12"
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 text-left p-5 md:px-6 md:py-10 lg:px-7 lg:py-12"
                     x-show="tab === 'council_and_councillors'">
                     <div class="flex items-center">
                         <img src="https://www.kirklees.gov.uk/beta/assets/global/img/icons/roundicons/128/Construction-02.png"
@@ -631,11 +630,287 @@
                     </div>
                 </div>
             </div>
+
+            <div class="bg-gray-200">
+                <div class="grid grid-cols-1 lg:grid-cols-3">
+                    <a href="#" class="flex items-center hover:bg-gray-100 px-6 py-1 md:px-8 py-6 lg:px-10 lg:py-7 flex items-center border-r md:border-white">
+                        <img src="https://www.kirklees.gov.uk/beta/assets/global/img/icons/roundicons/128/Construction-02.png" alt="#" class="w-16">
+                        <div class="pl-5">
+                            <h3 class="text-lg">Christmas</h3>
+                            <p class="pt-1 text-sm">Christmas bubbles, council services</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex items-center hover:bg-gray-100 px-6 py-1 md:px-8 py-6 lg:px-10 lg:py-7 flex items-center border-r md:border-white">
+                        <img src="https://www.kirklees.gov.uk/beta/assets/global/img/icons/roundicons/128/Construction-02.png" alt="#" class="w-16">
+                        <div class="pl-5">
+                            <h3 class="text-lg">COVID-19 restrictions</h3>
+                            <p class="pt-1 text-sm">What local restrictions are in place across Kirklees</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex items-center hover:bg-gray-100 px-6 py-1 md:px-8 py-6 lg:px-10 lg:py-7 flex items-center">
+                        <img src="https://www.kirklees.gov.uk/beta/assets/global/img/icons/roundicons/128/Construction-02.png" alt="#" class="w-16">
+                        <div class="pl-5">
+                            <h3 class="text-lg">Winter</h3>
+                            <p class="pt-1 text-sm">Gritting, weather, service disruptions</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-full flex justify-center">
+                <button class="mt-12 px-12 py-5 bg-blue-700 text-white hover:bg-blue-600">
+                    Self-service A to Z
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-blue-400 w-full px-5 py-16">
+        <div class="container max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+            <div class="bg-white px-5 py-10 border-t-8 border-green-600">
+                <h4 class="text-xl font-medium">Planning and development</h4>
+                <ul class="pt-4 leading-10">
+                    <li><a href="#" class="hover:underline">Search for splanning applications</a></li>
+                    <li><a href="#" class="hover:underline">Planning applications</a></li>
+                    <li><a href="#" class="hover:underline">Weekly list of planning applications</a></li>
+                    <li><a href="#" class="hover:underline">› More in Planning and development</a></li>
+                </ul>
+            </div>
+            <div class="bg-white px-5 py-10 border-t-8 border-green-600">
+                <h4 class="text-xl font-medium">Planning and development</h4>
+                <ul class="pt-4 leading-10">
+                    <li><a href="#" class="hover:underline">Search for splanning applications</a></li>
+                    <li><a href="#" class="hover:underline">Planning applications</a></li>
+                    <li><a href="#" class="hover:underline">Weekly list of planning applications</a></li>
+                    <li><a href="#" class="hover:underline">› More in Planning and development</a></li>
+                </ul>
+            </div>
+            <div class="bg-white px-5 py-10 border-t-8 border-green-600">
+                <h4 class="text-xl font-medium">Planning and development</h4>
+                <ul class="pt-4 leading-10">
+                    <li><a href="#" class="hover:underline">Search for splanning applications</a></li>
+                    <li><a href="#" class="hover:underline">Planning applications</a></li>
+                    <li><a href="#" class="hover:underline">Weekly list of planning applications</a></li>
+                    <li><a href="#" class="hover:underline">› More in Planning and development</a></li>
+                </ul>
+            </div>
+            <div class="bg-white px-5 py-10 border-t-8 border-green-600">
+                <h4 class="text-xl font-medium">Planning and development</h4>
+                <ul class="pt-4 leading-10">
+                    <li><a href="#" class="hover:underline">Search for splanning applications</a></li>
+                    <li><a href="#" class="hover:underline">Planning applications</a></li>
+                    <li><a href="#" class="hover:underline">Weekly list of planning applications</a></li>
+                    <li><a href="#" class="hover:underline">› More in Planning and development</a></li>
+                </ul>
+            </div>
+            <div class="bg-white px-5 py-10 border-t-8 border-green-600">
+                <h4 class="text-xl font-medium">Planning and development</h4>
+                <ul class="pt-4 leading-10">
+                    <li><a href="#" class="hover:underline">Search for splanning applications</a></li>
+                    <li><a href="#" class="hover:underline">Planning applications</a></li>
+                    <li><a href="#" class="hover:underline">Weekly list of planning applications</a></li>
+                    <li><a href="#" class="hover:underline">› More in Planning and development</a></li>
+                </ul>
+            </div>
+            <div class="bg-white px-5 py-10 border-t-8 border-green-600">
+                <h4 class="text-xl font-medium">Planning and development</h4>
+                <ul class="pt-4 leading-10">
+                    <li><a href="#" class="hover:underline">Search for splanning applications</a></li>
+                    <li><a href="#" class="hover:underline">Planning applications</a></li>
+                    <li><a href="#" class="hover:underline">Weekly list of planning applications</a></li>
+                    <li><a href="#" class="hover:underline">› More in Planning and development</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="w-full flex justify-center">
+            <button class="mt-12 px-12 py-5 bg-blue-700 text-white hover:bg-blue-600">
+                Self-service A to Z
+            </button>
+        </div>
+    </section>
+
+    <section>
+        <div class="container max-w-7xl mx-auto py-16 flex flex-col sm:flex-row">
+            <div class="flex-1 mb-12 sm:mb-0">
+                <img src="img/covid_featured.png" alt="#" class="w-auto mb-5 px-1">
+                <div class="px-5">
+                    <p class="xs text-blue-600 mb-2">Health and Wellbeing</p>
+                    <h3 class="text-3xl mb-3">Kirklees Care</h3>
+                    <p class="mb-6">We know it's been a tough year and that many people have suffered as a result of the pandemic but we want to tell you that Kirklees Cares. Find out what support is available and how we can help you.</p>
+                    <button class="px-7 py-4 bg-blue-600 text-white hover:bg-blue-500">Kirklees Cares</button>
+                </div>
+            </div>
+            <div class="flex-1">
+                <img src="img/covid_featured.png" alt="#" class="w-auto mb-5 px-1">
+                <div class="px-5">
+                    <p class="xs text-blue-600 mb-2">Health and Wellbeing</p>
+                    <h3 class="text-3xl mb-3">Kirklees Care</h3>
+                    <p class="mb-6">We know it's been a tough year and that many people have suffered as a result of the pandemic but we want to tell you that Kirklees Cares. Find out what support is available and how we can help you.</p>
+                    <button class="px-7 py-4 bg-blue-600 text-white hover:bg-blue-500">Kirklees Cares</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full bg-gray-700">
+        <div class="container max-w-7xl mx-auto py-16 flex flex-col md:flex-row">
+            <div class="flex-1 bg-yellow-600 mx-3 mb-3 md:mb-0">
+                <div class="p-8">
+                    <h3 class="text-3xl mb-3">Bereavement services</h3>
+                    <p class="mb-6">We know it's been a tough year and that many people have suffered as a result of the pandemic but we want to tell you that Kirklees Cares. Find out what support is available and how we can help you.</p>
+                    <a href="#" class="underline">Changes to bereavement services as a result of COVID-19</a>
+                </div>
+            </div>
+            <div class="flex-1 bg-yellow-600 mx-3 mb-3 md:mb-0">
+                <div class="p-8">
+                    <h3 class="text-3xl mb-3">Bereavement services</h3>
+                    <p class="mb-6">We know it's been a tough year and that many people have suffered as a result of the pandemic but we want to tell you that Kirklees Cares. Find out what support is available and how we can help you.</p>
+                    <a href="#" class="underline">Changes to bereavement services as a result of COVID-19</a>
+                </div>
+            </div>
+            <div class="flex-1 bg-yellow-600 mx-3 mb-3 md:mb-0">
+                <div class="p-8">
+                    <h3 class="text-3xl mb-3">Bereavement services</h3>
+                    <p class="mb-6">We know it's been a tough year and that many people have suffered as a result of the pandemic but we want to tell you that Kirklees Cares. Find out what support is available and how we can help you.</p>
+                    <a href="#" class="underline">Changes to bereavement services as a result of COVID-19</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container max-w-7xl mx-auto pt-16">
+            <div class="flex bg-gray-100 px-3 md:px-11 mb-3">
+                <h3 class="flex-auto text-3xl py-3">News</h3>
+                <button class="h-auto px-8 bg-gray-300">More news</button>
+            </div>
+            <div class="flex flex-col sm:flex-row">
+                <div class="flex-1 md:mx-3">
+                    <div class="px-3 pt-8 md:px-8">
+                        <a href="#">
+                            <h3 class="text-2xl mb-4 hover:underline">Helping children to have fun and stay healthy over the holidays</h3>
+                        </a>
+                        <p class="mb-2 text-sm text-blue-600">Posted on: Wednesday 23 December 2020</p>
+                        <p class="mb-6">We know it's been a tough year and that many people have suffered as a result of the pandemic but we want to tell you that Kirklees Cares. Find out what support is available and how we can help you.</p>
+                    </div>
+                </div>
+                <div class="flex-1 md:mx-3">
+                    <div class="px-3 pt-8 md:px-8">
+                        <a href="#">
+                            <h3 class="text-2xl mb-4 hover:underline">Helping children to have fun and stay healthy over the holidays</h3>
+                        </a>
+                        <p class="mb-2 text-sm text-blue-600">Posted on: Wednesday 23 December 2020</p>
+                        <p class="mb-6">We know it's been a tough year and that many people have suffered as a result of the pandemic but we want to tell you that Kirklees Cares. Find out what support is available and how we can help you.</p>
+                    </div>
+                </div>
+                <div class="flex-1 md:mx-3">
+                    <div class="px-3 pt-8 md:px-8">
+                        <a href="#">
+                            <h3 class="text-2xl mb-4 hover:underline">Helping children to have fun and stay healthy over the holidays</h3>
+                        </a>
+                        <p class="mb-2 text-sm text-blue-600">Posted on: Wednesday 23 December 2020</p>
+                        <p class="mb-6">We know it's been a tough year and that many people have suffered as a result of the pandemic but we want to tell you that Kirklees Cares. Find out what support is available and how we can help you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container max-w-7xl mx-auto pt-16">
+            <div class="flex bg-gray-100 px-3 md:px-11 mb-3">
+                <h3 class="flex-auto text-3xl py-3">Events</h3>
+                <button class="h-auto px-8 bg-gray-300">More events</button>
+            </div>
+            <div class="flex flex-col sm:flex-row">
+                <div class="flex-1 md:mx-3">
+                    <div class="px-3 pt-8 md:px-8">
+                        <p class="mb-4">Wednesday 23 December 2020</p>
+                        <a href="#">
+                            <h3 class="text-2xl mb-4 hover:underline">Helping children to have fun and stay healthy over the holidays</h3>
+                        </a>
+                        <span class="mb-6 bg-gray-200 px-3 py-2 rounded inline-block">Online</span>
+                    </div>
+                </div>
+                <div class="flex-1 md:mx-3">
+                    <div class="px-3 pt-8 md:px-8">
+                        <p class="mb-4">Wednesday 23 December 2020</p>
+                        <a href="#">
+                            <h3 class="text-2xl mb-4 hover:underline">Helping children to have fun and stay healthy over the holidays</h3>
+                        </a>
+                        <span class="mb-6 bg-gray-200 px-3 py-2 rounded inline-block">Online</span>
+                    </div>
+                </div>
+                <div class="flex-1 md:mx-3">
+                    <div class="px-3 pt-8 md:px-8">
+                        <p class="mb-4">Wednesday 23 December 2020</p>
+                        <a href="#">
+                            <h3 class="text-2xl mb-4 hover:underline">Helping children to have fun and stay healthy over the holidays</h3>
+                        </a>
+                        <span class="mb-6 bg-gray-200 px-3 py-2 rounded inline-block">Online</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full bg-gray-700 mt-16">
+        <div class="container max-w-7xl mx-auto py-16 text-white flex flex-wrap overflow-hidden">
+            <div class="w-full overflow-hidden sm:w-1/2 md:w-1/4">
+                <div class="py-3 px-5 md:p-8">
+                    <h4 class="text-2xl mb-3">Kirklees Council</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">My Kirklees Account</a></li>
+                        <li><a href="#">Emergency contacts</a></li>
+                        <li><a href="#">Site standards</a></li>
+                        <li><a href="#">Complaints</a></li>
+                        <li><a href="#">Accessibility statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full overflow-hidden sm:w-1/2 md:w-1/4">
+                <div class="py-3 px-5 md:p-8">
+                    <h4 class="text-2xl mb-3">Partnerships</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#">Digital Kirklees</a></li>
+                        <li><a href="#">Kirklees Neighbourhood Housing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full overflow-hidden sm:w-1/2 md:w-1/4">
+                <div class="py-3 px-5 md:p-8">
+                    <h4 class="text-2xl mb-3">Social</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#">Facebook - Kirklees</a></li>
+                        <li><a href="#">Twitter - @KirkleesCouncil</a></li>
+                        <li><a href="#">Instagram - @kirklees.council</a></li>
+                        <li><a href="#">Get email alerts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full overflow-hidden sm:w-1/2 md:w-1/4">
+                <div class="py-3 px-5 md:p-8">
+                    <a href="#">
+                        <img src="https://www.kirklees.gov.uk/beta/assets/global/img/digital-kirklees-logo-white-footer.png" alt="Digital Kirklees" class="mb-5">
+                    </a>
+                    <a href="#">
+                        <img src="https://www.kirklees.gov.uk/beta/assets/global/img/socitm-4-stars.png" alt="Better Connected Rating" class="w-40">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-center p-3 bg-gray-800 text-white">
+            <span>© Kirklees Council 2020</span>
         </div>
     </section>
 </body>
 
-<script>
+<!-- <script>
     window.onload = () => {
         'use strict';
 
@@ -644,5 +919,5 @@
                 .register('./service-worker.js');
         }
     }
-</script>
+</script> -->
 </html>
