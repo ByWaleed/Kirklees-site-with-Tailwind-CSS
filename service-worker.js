@@ -3,6 +3,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox
 var cacheName = 'hello-pwa';
 var filesToCache = [
   '/',
+  '/css'
   '/index.html',
   'logo.png'
 ];
