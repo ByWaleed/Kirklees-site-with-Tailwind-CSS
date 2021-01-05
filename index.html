@@ -470,6 +470,7 @@
                         </div>
                     </div>
                 </nav>
+                <!-- Mobile Navigation -->
                 <div class="hidden md:flex items-center justify-end">
                     <div class="relative w-full">
                         <div class="absolute ml-3 inset-0 m-auto w-4 h-4">
@@ -634,7 +635,14 @@
             Popular Services
         </h1>
     
-        <div class="container mt-10 max-w-7xl p-5"
+        <div class="container max-w-7xl p-5 pb-0 mt-10">
+            <div class="bg-gray-800 p-5">
+                <a href="#" class="float-right text-white underline">Login / register for a My Kirklees Account</a>
+                <img src="https://www.kirklees.gov.uk/beta/assets/global/img/My-Kirklees-Account-Logo-Full-Rev.png"
+                    alt="My Kirklees Account logo">
+            </div>
+        </div>
+        <div class="container p-5 pt-0 max-w-7xl"
             x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'residents' }" id="tab_wrapper">
             <nav class="flex flex-col md:flex-row bg-white text-lg">
                 <a href="#" class="md:flex-1 py-4 pl-5 hover:bg-gray-200 border-b-8"
@@ -806,14 +814,14 @@
             </div>
 
             <div class="w-full flex justify-center">
-                <button class="mt-12 px-12 py-5 bg-blue-700 text-white hover:bg-blue-600">
+                <button class="mt-12 px-12 py-5 bg-blue-500 text-white hover:bg-blue-600">
                     Self-service A to Z
                 </button>
             </div>
         </div>
     </section>
 
-    <section class="bg-blue-400 w-full px-5 py-16">
+    <section class="bg-gray-800 w-full px-5 py-16">
         <div class="container max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             <div class="bg-white px-5 py-10 border-t-8 border-green-600">
                 <h4 class="text-xl font-medium">Planning and development</h4>
@@ -872,7 +880,7 @@
         </div>
         
         <div class="w-full flex justify-center">
-            <button class="mt-12 px-12 py-5 bg-blue-700 text-white hover:bg-blue-600">
+            <button class="mt-12 px-12 py-5 bg-blue-500 text-white hover:bg-blue-600">
                 Self-service A to Z
             </button>
         </div>
@@ -886,7 +894,7 @@
                     <p class="xs text-blue-600 mb-2">Health and Wellbeing</p>
                     <h3 class="text-3xl mb-3">Kirklees Care</h3>
                     <p class="mb-6">We know it's been a tough year and that many people have suffered as a result of the pandemic but we want to tell you that Kirklees Cares. Find out what support is available and how we can help you.</p>
-                    <button class="px-7 py-4 bg-blue-600 text-white hover:bg-blue-500">Kirklees Cares</button>
+                    <button class="px-7 py-4 bg-blue-500 text-white hover:bg-blue-700">Kirklees Cares</button>
                 </div>
             </div>
             <div class="flex-1">
@@ -895,13 +903,13 @@
                     <p class="xs text-blue-600 mb-2">Health and Wellbeing</p>
                     <h3 class="text-3xl mb-3">Kirklees Care</h3>
                     <p class="mb-6">We know it's been a tough year and that many people have suffered as a result of the pandemic but we want to tell you that Kirklees Cares. Find out what support is available and how we can help you.</p>
-                    <button class="px-7 py-4 bg-blue-600 text-white hover:bg-blue-500">Kirklees Cares</button>
+                    <button class="px-7 py-4 bg-blue-500 text-white hover:bg-blue-700">Kirklees Cares</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="w-full bg-gray-700">
+    <section class="w-full bg-gray-800">
         <div class="container max-w-7xl mx-auto py-16 flex flex-col md:flex-row">
             <div class="flex-1 bg-yellow-600 mx-3 mb-3 md:mb-0">
                 <div class="p-8">
@@ -1003,7 +1011,7 @@
         </div>
     </section>
 
-    <section class="w-full bg-gray-700 mt-16">
+    <section class="w-full bg-gray-800 mt-16">
         <div class="container max-w-7xl mx-auto py-16 text-white flex flex-wrap overflow-hidden">
             <div class="w-full overflow-hidden sm:w-1/2 md:w-1/4">
                 <div class="py-3 px-5 md:p-8">
